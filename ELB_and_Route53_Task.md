@@ -9,55 +9,40 @@
  b. Removing the Resources When CPU Utilization goes under 60%  
 
 ## 2. Create Load Balancer to distribute the load between compute resources  
-
 ## 3. Route the Trrafic to Company's Domain 
 
 ### Create KeyPair
-
 ![Untitled 1](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/319da475-1cd6-40ca-86dc-5a836df7f1f2)
 
-
 ### Create Security Group and allow SSH and HTTP
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/5d8fcc3b-ae5d-4ac1-94ea-b7e4a6a63771/Untitled.png)
+![Untitled 2](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/af0e7fb4-e090-40b1-8eb2-2911aee3758b)
 
 ### Edit Inbound and Allow SSH and HTTP
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/b1ea89fd-39c4-45ad-a642-55f3cfe030b5/Untitled.png)
-
+![Untitled 3](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/2f925a52-d6b2-4d2c-8854-d0cffc9aa7a7)
 Now Security Group Created Successfully.
 
 ## Create Target Groups
-
 **Navigate to EC2 Dashborad —> LoadBalancing —> Target Groups —> Create Target Groups** 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/99763deb-6a05-4ed5-97d4-418ae9db15a8/Untitled.png)
+![Untitled 4](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/10d6e5a0-5ea1-4f7d-9e25-3e365282abe9)
 
 **Choose Target type Instances** 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/5c387036-f2bd-4c00-9714-4c669cf600e9/Untitled.png)
+![Untitled 5](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/3ce56d7e-531d-4107-9d57-10d75d1821b8)
 
 **Then choose the name** 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/b9e0648f-cca4-468f-b694-24bd3fad69f6/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/b1b04ad9-e0fe-40e5-a480-e612fa5552f2/Untitled.png)
+![Untitled 6](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/1bcea506-4e7a-4516-82fa-3156d96c3697)
+![Untitled 7](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/46df65e6-b203-453e-a62c-d1d65f991de6)
 
 ## Create Application Load Balancer
 
 **Navigate to EC2 Dashboard —> Load balancing —> Load Balancer —> Create Load Balancer**
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/c65afd4d-ac7d-41de-a154-a5524696fb52/Untitled.png)
+![Untitled 8](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/c6521d0a-592d-4482-a88a-466f3fee4e49)
 
 **Select all Subnets** 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/682ec571-d7ae-41dd-a50e-ac0fac088f1b/Untitled.png)
+![Untitled 9](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/753fc0af-9ed1-4bf1-9d3e-ce50bc414431)
 
 **Select Target Group** 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/142afc5c-f2ab-4c18-9457-5e9167bdb6d3/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/4cfdaaff-a1c0-4fbd-ac6b-d2980f440fd6/Untitled.png)
+![Untitled 10](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/f9749b19-2ab3-406d-9eaa-472545e6bc41)
+![Untitled 11](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/d0e102f3-147d-4378-81af-b573446c56a2)
 
 **Load Balancer Created Successfully.**
 
@@ -82,45 +67,34 @@ echo "Welcome to my Website" > /var/www/html/index.html
 systemctl restart httpd 
 
 ```
+![Untitled 12](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/d7de536c-0a67-40ff-8593-1206d2eaeaae)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/ab50acca-3e66-4d77-8ec2-ee846b594eeb/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/3943baba-1e38-4fe6-a380-9800f416b130/Untitled.png)
-
+![Untitled 13](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/ff0072b0-573c-42e6-8a90-fcf965934ae6)
 **Launch Template Created Successfully.**
 
 ## Create Auto-Scaling Groups
-
 **Navigate ⇒ EC2 Dashboard —>Auto-Scaling Groups —> Create Auto Scaling Group**
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/a9be2426-39a1-49da-aab8-d118108c05a0/Untitled.png)
+![Untitled 14](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/4dbe4574-957f-49a5-acf0-2054c77d1852)
 
 **Select all Subnets** 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/f2771419-1425-4de7-9872-4bcb7f446b89/Untitled.png)
+![Untitled 15](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/2e007c3a-41ab-4cab-9713-e1ab5c84f027)
 
 **Then choose exiting Load Balancer**
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/4990ba0d-8302-42c4-a930-9d0cb226e34f/Untitled.png)
+![Untitled 16](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/fa4f2871-dbf5-44d2-b95b-5dfa91885183)
 
 **Turn On Elastic Load Balancing Health check** 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/13c7b170-138b-49d8-a3d7-0c894fa29254/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/ae33ce0a-69bc-4e2e-85f0-73269dc821f0/Untitled.png)
+![Untitled 17](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/5e4c174b-b377-4730-bf13-8f92c4104048)
+![Untitled 18](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/d77fddbe-0d72-49c0-8d45-12b47dd4b766)
 
 **Simply Skip and next and complete the steps.**
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/ca35b6e9-9b3b-4e52-a3da-f8040ae73a06/Untitled.png)
+![Untitled 19](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/ac9b76f0-0ebe-469f-80b3-a3e51312fc92)
 
 **Now Successfully Created Auto-Scaling Group.**
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/7a562276-55a8-4eb1-bde3-cd6111f33b75/Untitled.png)
+![Untitled 20](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/2882371e-bafe-4821-a6ff-c20f59478217)
 
 **Now ASG Working as expected.**
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/57a705de-20fe-43c1-87e7-69e8a4de156f/Untitled.png)
+![Untitled 21](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/3bb829d8-a832-4b02-9d18-03303cc09d02)
 
 ## 4. Map the Company Domain.
+![Untitled](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/97885e73-5dc7-45fc-a0e2-447183f40374)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/0d32f7c5-ca16-46fe-9479-9e41b5f727ac/Untitled.png)
