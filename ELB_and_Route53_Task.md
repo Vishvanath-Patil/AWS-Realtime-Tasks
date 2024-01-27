@@ -14,7 +14,8 @@
 
 ### Create KeyPair
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd45c56f-cde0-4b31-a477-4ec3fa5f480b/e7e2f023-71de-4317-bd83-a839bb9ace8c/Untitled.png)
+![Untitled 1](https://github.com/Vishvanath-Patil/AWS-Realtime-Tasks/assets/130968991/319da475-1cd6-40ca-86dc-5a836df7f1f2)
+
 
 ### Create Security Group and allow SSH and HTTP
 
